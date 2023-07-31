@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerWebApi", "CustomerWebApi\CustomerWebApi.csproj", "{A7C51BCC-27FB-4B57-A6A0-19E3FE0B9C17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductWebApi", "ProductWebApi\ProductWebApi.csproj", "{DA7BFBAE-E883-45AE-8356-C02420773504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductWebApi", "ProductWebApi\ProductWebApi.csproj", "{DA7BFBAE-E883-45AE-8356-C02420773504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderWebApi", "OrderWebApii\OrderWebApi.csproj", "{20954A6D-6BA5-4E7E-ACB9-5B40E2022A81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{DA7BFBAE-E883-45AE-8356-C02420773504}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA7BFBAE-E883-45AE-8356-C02420773504}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA7BFBAE-E883-45AE-8356-C02420773504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20954A6D-6BA5-4E7E-ACB9-5B40E2022A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20954A6D-6BA5-4E7E-ACB9-5B40E2022A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20954A6D-6BA5-4E7E-ACB9-5B40E2022A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20954A6D-6BA5-4E7E-ACB9-5B40E2022A81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A7C51BCC-27FB-4B57-A6A0-19E3FE0B9C17} = {FB7B25CB-0D65-4E99-9AA1-E274392B7C5B}
 		{DA7BFBAE-E883-45AE-8356-C02420773504} = {FB7B25CB-0D65-4E99-9AA1-E274392B7C5B}
+		{20954A6D-6BA5-4E7E-ACB9-5B40E2022A81} = {FB7B25CB-0D65-4E99-9AA1-E274392B7C5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3790FDB6-2F06-4159-8DB8-E15665E5E1C8}
