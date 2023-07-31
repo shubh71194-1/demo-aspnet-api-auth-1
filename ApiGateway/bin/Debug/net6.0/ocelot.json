@@ -1,0 +1,82 @@
+{
+  "Routes": [
+
+    // Customer Web Api
+    {
+      "UpstreamPathTemplate": "/customer",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5192
+        }
+      ],
+      "DownstreamPathTemplate": "/api/customer"
+    },
+    {
+      "UpstreamPathTemplate": "/customer/{customerId}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5192
+        }
+      ],
+      "DownstreamPathTemplate": "/api/customer/{customerId}"
+    },
+
+    // Product Web Api
+    {
+      "UpstreamPathTemplate": "/product",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5037
+        }
+      ],
+      "DownstreamPathTemplate": "/api/product"
+    },
+    {
+      "UpstreamPathTemplate": "/product/{productId}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5037
+        }
+      ],
+      "DownstreamPathTemplate": "/api/product/{productId}"
+    },
+
+    // Order Web Api
+    {
+      "UpstreamPathTemplate": "/order",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5064
+        }
+      ],
+      "DownstreamPathTemplate": "/api/order"
+    },
+    {
+      "UpstreamPathTemplate": "/order/{orderId}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5064
+        }
+      ],
+      "DownstreamPathTemplate": "/api/order/{orderId}"
+    }
+  ]
+}
