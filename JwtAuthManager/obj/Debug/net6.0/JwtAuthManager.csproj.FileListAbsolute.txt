@@ -1,0 +1,12 @@
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\bin\Debug\net6.0\JwtAuthManager.deps.json
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\bin\Debug\net6.0\JwtAuthManager.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\bin\Debug\net6.0\JwtAuthManager.pdb
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\obj\Debug\net6.0\JwtAuthManager.csproj.AssemblyReference.cache
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\obj\Debug\net6.0\JwtAuthManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\obj\Debug\net6.0\JwtAuthManager.AssemblyInfoInputs.cache
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\obj\Debug\net6.0\JwtAuthManager.AssemblyInfo.cs
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\obj\Debug\net6.0\JwtAuthManager.csproj.CoreCompileInputs.cache
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\obj\Debug\net6.0\JwtAuthManager.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\obj\Debug\net6.0\refint\JwtAuthManager.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\obj\Debug\net6.0\JwtAuthManager.pdb
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\JwtAuthManager\obj\Debug\net6.0\ref\JwtAuthManager.dll
