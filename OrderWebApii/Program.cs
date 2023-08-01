@@ -1,3 +1,5 @@
+using JwtAuthManager;
+
 namespace OrderWebApi
 {
     public class Program
@@ -10,10 +12,14 @@ namespace OrderWebApi
 
             builder.Services.AddControllers();
 
+            // Authentication Service
+            builder.Services.AddCustomJwtAuthentication();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

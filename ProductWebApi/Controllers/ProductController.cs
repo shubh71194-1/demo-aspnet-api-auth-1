@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductWebApi.Context;
@@ -18,6 +19,7 @@ namespace ProductWebApi.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
             return await _dbContext.Products.ToListAsync();
@@ -31,6 +33,7 @@ namespace ProductWebApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles ="Admin")]
         public async Task<ActionResult<Product>> CreateProduct(Product product)
         {
             await _dbContext.Products.AddAsync(product);
@@ -39,6 +42,7 @@ namespace ProductWebApi.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin,User")]
         public async Task<ActionResult<Product>> UpdateProduct(Product product)
         {
             _dbContext.Products.Update(product);

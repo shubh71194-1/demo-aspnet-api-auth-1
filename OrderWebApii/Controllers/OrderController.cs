@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using OrderWebApi.Models;
@@ -26,6 +27,7 @@ namespace OrderWebApi.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
         {
             return await _orderCollection.Find(Builders<Order>.Filter.Empty).ToListAsync();
@@ -39,6 +41,7 @@ namespace OrderWebApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles ="Admin")]
         public async Task<ActionResult<Order>> CreateOrder(Order order)
         {
             await _orderCollection.InsertOneAsync(order);
@@ -46,6 +49,7 @@ namespace OrderWebApi.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles ="Admin,User")]
         public async Task<ActionResult<Order>> UpdateOrder(Order order)
         {
             var filter = Builders<Order>.Filter.Eq(x => x.OrderId, order.OrderId);

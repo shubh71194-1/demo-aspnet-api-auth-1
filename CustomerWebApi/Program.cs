@@ -1,4 +1,5 @@
 using CustomerWebApi.Context;
+using JwtAuthManager;
 using Microsoft.EntityFrameworkCore;
 
 namespace CustomerWebApi
@@ -12,6 +13,9 @@ namespace CustomerWebApi
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            // Authentication Service
+            builder.Services.AddCustomJwtAuthentication();
 
             // DB context
             var dbHost = ".\\SQLEXPRESS";
@@ -28,6 +32,7 @@ namespace CustomerWebApi
 
             // Configure the HTTP request pipeline.
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

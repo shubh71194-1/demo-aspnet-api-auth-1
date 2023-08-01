@@ -39,10 +39,10 @@ namespace JwtAuthManager
 
             var tokenExpiryTimeStamp = DateTime.Now.AddMinutes(JWT_TOKEN_VALIDITY_MINS);
             var tokenKey = Encoding.ASCII.GetBytes(JWT_SECURITY_KEY);
-            var clainIdentity = new ClaimsIdentity(new List<Claim>
+            var claimIdentity = new ClaimsIdentity(new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Name, request.UserName),
-                new Claim(ClaimTypes.Name, user.Role)
+                new Claim(ClaimTypes.Role, user.Role)
             });
 
             var signingCredentials = new SigningCredentials(
@@ -51,7 +51,7 @@ namespace JwtAuthManager
 
             var securityTokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = clainIdentity,
+                Subject = claimIdentity,
                 Expires = tokenExpiryTimeStamp,
                 SigningCredentials = signingCredentials
             };

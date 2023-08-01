@@ -38,3 +38,13 @@ D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\obj\Debug\n
 D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\obj\Debug\net6.0\OrderWebApi.pdb
 D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\obj\Debug\net6.0\OrderWebApi.genruntimeconfig.cache
 D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\obj\Debug\net6.0\ref\OrderWebApi.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\JwtAuthManager.dll
+D:\Shubham Mali\Training\Project\demo-aspnet-api-auth-1\OrderWebApii\bin\Debug\net6.0\JwtAuthManager.pdb

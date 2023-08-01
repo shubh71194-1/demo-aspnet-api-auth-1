@@ -1,5 +1,6 @@
 ﻿using CustomerWebApi.Context;
 using CustomerWebApi.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +19,7 @@ namespace CustomerWebApi.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
             return await _dbContext.Customers.ToListAsync();
@@ -31,6 +33,7 @@ namespace CustomerWebApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles ="Admin")]
         public async Task<ActionResult<Customer>> CreateCustomer(Customer customer)
         {
             await _dbContext.Customers.AddAsync(customer);
@@ -39,6 +42,7 @@ namespace CustomerWebApi.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles ="Admin,User")]
         public async Task<ActionResult<Customer>> UpdateCustomer(Customer customer)
         {
             _dbContext.Customers.Update(customer);

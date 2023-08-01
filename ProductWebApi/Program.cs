@@ -1,3 +1,4 @@
+using JwtAuthManager;
 using Microsoft.EntityFrameworkCore;
 using ProductWebApi.Context;
 
@@ -24,10 +25,14 @@ namespace ProductWebApi
 
             builder.Services.AddControllers();
 
+            // Authentication Service
+            builder.Services.AddCustomJwtAuthentication();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
